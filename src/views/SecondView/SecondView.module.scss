@@ -1,0 +1,25 @@
+@use "@/styles/variables" as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h3 {
+    margin: 0;
+    font-family: $font-snlR;
+    font-size: 26px;
+    color: $color-green;
+    font-weight: 500;
+  }
+
+  p{
+    font-family: $font-pln;
+    margin: 20px 30px 72px 30px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,64 @@
+@use 'styles/variables' as *;
+@font-face {
+    font-family: 'Vasek';
+    src: url('assets/Vasek_Italic_0.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SnellRound';
+    src: url('assets/snellroundhand_black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SnellRound';
+    src: url('assets/snellroundhand_bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('assets/palatinolinotype_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('assets/palatinolinotype_bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('assets/palatinolinotype_italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('assets/palatinolinotype_roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.view {
+    width: 410px;
+    background-color: #F8F1E1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}

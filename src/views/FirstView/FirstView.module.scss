@@ -1,0 +1,44 @@
+@use "@/styles/variables" as *;
+
+.photo {
+  background-image: url("public/photo/preview.png") ;
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .header {
+      margin-top: 52px;
+      font-family: $font-vsk;
+      font-size: 22px;
+      color: $color-milk;
+    }
+
+    .footer {
+      margin-bottom: 139px;
+      color: $color-milk;
+
+      h3 {
+        font-family: $font-snlR;
+        font-size: 44px;
+        margin: 0;
+      }
+
+      p {
+        font-family: $font-pln;
+        font-size: 14px;
+        margin: 10px 0;
+
+      }
+    }
+  }
+}
