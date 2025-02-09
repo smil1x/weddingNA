@@ -1,7 +1,7 @@
 @use "@/styles/variables" as *;
 
 .photo {
-  background-image: url("public/photo/preview.png") ;
+  background-image: url("/src/assets/photo/preview.png") ;
   width: 100%;
   height: 800px;
   background-position: center;

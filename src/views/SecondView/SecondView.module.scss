@@ -7,7 +7,6 @@
   align-items: center;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 60px;
 
   h3 {
     margin: 0;
@@ -22,4 +21,18 @@
     margin: 20px 30px 72px 30px;
     font-size: 14px;
   }
+}
+
+.homestead {
+  margin-top: 61px;
+  width: 100%;
+
+
+}
+.homesteadLogo {
+  width: 70px;
+  z-index: 10;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
 }

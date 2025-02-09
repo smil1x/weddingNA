@@ -12,6 +12,10 @@ const SecondView = () => {
                     то очень дорог для нас и мы будем невероятно рады видеть тебя на празднике нашей любви!
                 </p>
                 <TargetDate/>
+                <div style={{width:'100%', position:'relative'}}>
+                    <img className={styles.homestead} src={'other/homestead.png'} alt={''}/>
+                    <img className={styles.homesteadLogo} src={'other/homestead-logo.png'} alt={''}/>
+                </div>
             </div>
         </Flex>
     )

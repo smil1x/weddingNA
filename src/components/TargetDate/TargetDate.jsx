@@ -5,7 +5,7 @@ const TargetDate = () => {
 
     return (
         <div className={styles.container}>
-            <img className={styles.topTape} src={'public/other/top-tape.png'} alt={''}/>
+            <img className={styles.topTape} src={'other/top-tape.png'} alt={''}/>
             <Flex gap={20} justify="center">
                 <Flex className={styles.item}>
                     <p>ПН</p>
@@ -23,7 +23,7 @@ const TargetDate = () => {
                     <p>ЧТ</p>
                     <h3>15</h3>
                     <Flex className={styles.heart}>
-                        <img src={'public/other/heart.png'} alt={''}/>
+                        <img src={'other/heart.png'} alt={''}/>
                         <p>Май</p>
                     </Flex>
                 </Flex>
@@ -40,7 +40,7 @@ const TargetDate = () => {
                     <h3>18</h3>
                 </Flex>
             </Flex>
-            <img className={styles.botTape} src={'public/other/bottom-tape.png'} alt={''}/>
+            <img className={styles.botTape} src={'other/bottom-tape.png'} alt={''}/>
         </div>
 
     )
