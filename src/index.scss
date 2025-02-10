@@ -57,9 +57,15 @@
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: visible;
+
+    @media (max-width: 430px) {
+        width: 100%
+    }
 }
 
 body{
     margin: 0;
     padding: 0;
 }
+

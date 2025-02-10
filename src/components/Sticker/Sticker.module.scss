@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 5px 5px 20px 5px;
+  height: 81px;
+  box-shadow: -15px 40px 60px rgba(0, 0, 0, 0.2);
+}
+
+.sticker {
+  position: absolute;
+  left: 40px;
+  top: -14px;
+  width: 13px;
+}

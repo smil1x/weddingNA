@@ -4,6 +4,8 @@ import './index.scss'
 import SecondView from "@/views/SecondView/SecondView.jsx";
 import ThirdView from "@/views/ThirdView/ThirdView.jsx";
 import FourthView from "@/views/FourthView/FourthView.jsx";
+import FifthView from "@/views/FifthView/FifthView.jsx";
+import SixthView from "@/views/SixthView/SixthView.jsx";
 
 function App() {
 
@@ -31,6 +33,8 @@ function App() {
                 <SecondView/>
                 <ThirdView/>
                 <FourthView/>
+                <FifthView/>
+                <SixthView/>
             </Flex>
         </ConfigProvider>
 

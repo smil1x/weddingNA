@@ -1,6 +1,6 @@
 {
   "name": "wedding-na",
- "homepage": "https://smil1x.github.io/weddingNA",
+  "homepage": "https://smil1x.github.io/weddingNA",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "antd": "^5.23.4",
     "classnames": "^2.5.1",
     "react": "^19.0.0",
+    "react-bootstrap-icons": "^1.11.5",
     "react-dom": "^19.0.0",
     "sass": "^1.84.0"
   },
