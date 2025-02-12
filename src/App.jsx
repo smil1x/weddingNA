@@ -1,11 +1,17 @@
 import { ConfigProvider, Flex } from "antd";
-import FirstView from "./views/FirstView/FirstView.jsx";
+
 import './index.scss'
-import SecondView from "@/views/SecondView/SecondView.jsx";
-import ThirdView from "@/views/ThirdView/ThirdView.jsx";
-import FourthView from "@/views/FourthView/FourthView.jsx";
-import FifthView from "@/views/FifthView/FifthView.jsx";
-import SixthView from "@/views/SixthView/SixthView.jsx";
+import FirstView from "@/views/1FirstView/FirstView.jsx";
+import SecondView from "@/views/2SecondView/SecondView.jsx";
+import ThirdView from "@/views/3ThirdView/ThirdView.jsx";
+import FourthView from "@/views/4FourthView/FourthView.jsx";
+import FifthView from "@/views/5FifthView/FifthView.jsx";
+import SixthView from "@/views/6SixthView/SixthView.jsx";
+import SeventhView from "@/views/7SeventhView/SeventhView.jsx";
+import EighthView from "@/views/8EighthView/EighthView.jsx";
+import NinthView from "@/views/9NinthView/NinthView.jsx";
+import TenthView from "@/views/10TenthView/TenthView.jsx";
+
 
 function App() {
 
@@ -35,6 +41,10 @@ function App() {
                 <FourthView/>
                 <FifthView/>
                 <SixthView/>
+                <SeventhView/>
+                <EighthView/>
+                <NinthView/>
+                <TenthView/>
             </Flex>
         </ConfigProvider>
 

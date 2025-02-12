@@ -1,0 +1,28 @@
+@use "@/styles/variables" as *;
+
+.container {
+  text-align: center;
+  font-family: $font-pln;
+  color: $color-grey;
+  z-index: 3;
+
+  h3 {
+    color: $color-green;
+    font-size: 26px;
+    font-family: $font-snlR;
+    margin: 60px 0 20px 0;
+    font-weight: 500;
+  }
+
+  p{
+    margin: 0;
+    width: 335px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .photos {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

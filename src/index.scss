@@ -50,13 +50,14 @@
 
 
 .view {
+    z-index: 2;
     align-items: center;
     width: 410px;
     background-color: #F8F1E1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     overflow-y: visible;
 
     @media (max-width: 430px) {

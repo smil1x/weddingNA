@@ -1,0 +1,22 @@
+@use "@/styles/variables" as *;
+
+.container {
+  z-index: 2;
+
+  h3 {
+    color: $color-green;
+    font-family: $font-snlR;
+    margin: 0;
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+  p{
+    line-height: 22px;
+    color: $color-grey;
+    width: 335px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+}

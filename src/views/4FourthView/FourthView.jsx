@@ -5,7 +5,7 @@ const FourthView = () => {
         <div className={'view'}>
             <div style={{height:'auto', position:'relative'}}>
                 <img width={'100%'} src={'other/spb-waw.png'} alt=""/>
-                <p className={styles.spbWaw}>Питер - Варшава</p>
+                <d className={styles.spbWaw}>Питер - Варшава</d>
             </div>
         </div>
     )
