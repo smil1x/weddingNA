@@ -8,3 +8,5 @@ export const planTime = {
     banquet: '17:30',
     end: '00:00'
 }
+
+export const weddingDate = '2025-05-15T16:40:00'

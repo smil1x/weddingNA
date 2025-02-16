@@ -1,0 +1,60 @@
+@use "@/styles/variables" as *;
+
+.container {
+  background-color: $color-green;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-pln;
+  color: $color-milk;
+  padding-bottom: 94px;
+
+  h3 {
+    margin: 40px 0 20px 0;
+    font-family: $font-snlR;
+    font-size: 26px;
+
+  }
+
+  p{
+    margin: 0;
+  }
+
+  .item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .separator {
+      padding: 0 1px;
+      text-decoration: none;
+    }
+  }
+
+  .pointerToOrg {
+    position: absolute;
+    width: 54px;
+    top: 25px;
+    left: 40%;
+  }
+
+  .pointerToLead {
+    position: absolute;
+    width: 52px;
+    top: 18px;
+    right: -35px;
+  }
+
+  .withLove {
+    position: absolute;
+    font-family: $font-vsk;
+    font-size: 35px;
+  }
+
+}

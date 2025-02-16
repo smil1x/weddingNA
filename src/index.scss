@@ -60,6 +60,10 @@
     //overflow-x: hidden;
     overflow-y: visible;
 
+    p {
+        line-height: 22px;
+    }
+
     @media (max-width: 430px) {
         width: 100%
     }
@@ -70,3 +74,39 @@ body{
     padding: 0;
 }
 
+input, select, textarea {
+    font-size: 16px;
+}
+
+.ant-input {
+    transition: all 1s ease-in-out;
+    text-align: center;
+}
+
+.ant-select-dropdown {
+    font-size: 16px !important;
+    padding: 0 !important;
+    text-align: center;
+    margin: 0 !important;
+    height: fit-content;
+    border-left: 1px solid #60824C;
+    border-right: 1px solid #60824C;
+    border-bottom: 1px solid #60824C;
+}
+.ant-select-item {
+    border-bottom: 1px solid #60824C;
+
+}
+.ant-select-item:first-child {
+    border-top: 1px solid #60824C;
+}
+
+.ant-select .ant-select-arrow {
+    color: #60824C;
+    transition: transform 0.5s ease; /* Плавная анимация */
+}
+
+.ant-select-open .ant-select-arrow {
+    color: #60824C;
+    transform: rotate(180deg); /* Переворачиваем иконку при открытии */
+}
