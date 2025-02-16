@@ -117,7 +117,7 @@ input, select, textarea {
 
 .ant-modal-wrap {
     padding-right: 17px !important;
-    height: 100hv !important;
+    //height: 100hv !important;
 }
 
 .ant-modal {
@@ -130,6 +130,7 @@ input, select, textarea {
     position: relative;
 
     h3 {
+        text-align: center;
         font-family: 'SnellRound', sans-serif;
         color: #60824c;
         font-weight: 500;
@@ -154,12 +155,19 @@ input, select, textarea {
     height: 215px;
 }
 
+@media (min-height: 450px) {
+    .ant-modal-wrap {
+        padding-right: 17px !important;
+    }
+}
+
+
 @media (max-width: 431px) {
     .view {
         width: $phone-with;
     }
     .ant-modal-wrap {
-        padding-right: 0 !important;
+        padding: 0 !important;
     }
 
     .customModal {

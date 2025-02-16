@@ -23,6 +23,7 @@ const NinthView = () => {
             <div style={{marginTop: 25}}>
                 <Sticker src={'other/sticker5.png'} deg={15}/>
             </div>
+            <img className={styles.line12} src={'lines/line12.png'} alt=''/>
         </Flex>
     </div>
 }

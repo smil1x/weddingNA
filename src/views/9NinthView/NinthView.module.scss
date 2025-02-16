@@ -22,7 +22,18 @@
   }
 
   .photos {
+    justify-content: center;
+    position: relative;
     margin-top: 60px;
     margin-bottom: 60px;
+    width: 100%;
+
+    .line12 {
+      z-index: 20;
+      position: absolute;
+      width: 100%;
+      bottom: 85px;
+      transform: rotate(-7deg);
+    }
   }
 }

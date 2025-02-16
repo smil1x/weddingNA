@@ -1,8 +1,9 @@
-import { Button, ConfigProvider, Flex, Form, message, Select } from "antd";
+import { Button, ConfigProvider, Flex, Form, Input, message, Select } from "antd";
 import styles from "./TenthView.module.scss";
-import Input from "antd/es/input/Input.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EditableSelect from "@/components/EditableSelect/EditableSelect.jsx";
+import { useParams } from "react-router-dom";
+import { getGuest } from "@/utils/index.js";
 
 const nmPs = 'Имя и фамилия'
 const phPs = 'Телефон для связи'
@@ -11,6 +12,14 @@ const pOnePs = 'Имя и фамилия спутника(цы)'
 
 const TenthView = () => {
     const [messageApi, contextHolder] = message.useMessage();
+    const [guest, setGuest] = useState({});
+    const { id } = useParams();
+
+    useEffect(() => {
+        const data = getGuest(id);
+        setGuest(data);
+    }, [id]);
+
 
 
     const [namePs, setNamePs] = useState(nmPs);
@@ -25,11 +34,32 @@ const TenthView = () => {
 
     const [form] = Form.useForm();
     const onSend = async () => {
-
         try {
-
-            await form.validateFields()
+            // await form.validateFields()
             const values = form.getFieldsValue()
+            const formData = new URLSearchParams();
+
+            formData.append("entry.1040866301", guest.systemName); //Системное имя
+            formData.append("entry.71283983", values.name);
+            formData.append("entry.198921354", values.phone);
+            formData.append("entry.1561415679", values.alcohol);
+            formData.append("entry.10015483", values.whiteWine || '');
+            formData.append("entry.197665140", values.redWine || '');
+            formData.append("entry.853818239", values.champagne || '');
+            formData.append("entry.2004517827", values.allergens || '');
+            formData.append("entry.1228141203", values.plusOne || '');
+            formData.append("entry.1624780657", values.plusOneName || '');
+            formData.append("entry.693437904", values.transferTo || '');
+            formData.append("entry.580646780", values.transferFrom || '');
+            formData.append("entry.238935683", values.secondDay || '');
+
+            // Отправляем данные в Google Forms
+            await fetch("https://docs.google.com/forms/d/e/1FAIpQLSeQLfLZvjYB5jHSOZKpG7P7ckb3ylrCW9DFDg93-BeO7ifJaA/formResponse", {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: formData.toString()
+            });
             console.log(values)
             messageApi.success({content: 'Данные отправлены'})
             form.resetFields()

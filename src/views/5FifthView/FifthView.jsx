@@ -8,7 +8,7 @@ const FifthView = () => {
     return (
         <div className={classNames('view', styles.container)}>
             <h3>Тайминг</h3>
-            <Flex align='center' style={{width: '100%', marginBottom: 10}}>
+            <Flex align='center' justify='space-between' style={{width: '100%', marginBottom: 10}}>
                 <Flex className={styles.firstHalf}>
                     <PlanItem time={planTime.npDeparture}>
                         <p className={styles.title}>Выезд из г. Новополоцк</p>
@@ -20,7 +20,7 @@ const FifthView = () => {
                         <p className={styles.title}>Расселение.<br/> Сбор гостей на площадке</p>
                     </PlanItem>
                 </Flex>
-                <Flex vertical gap={40} style={{marginLeft: 80}}>
+                <Flex vertical gap={40} style={{marginRight: 50}}>
                     <Sticker src={'other/sticker1.png'} deg={7}/>
                     <Sticker src={'other/sticker2.png'} deg={9}/>
                 </Flex>
