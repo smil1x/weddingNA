@@ -2,7 +2,7 @@ import { Flex } from "antd";
 import styles from "./FirstView.module.scss";
 
 const FirstView = () => {
-    return <Flex className={'view'} >
+    return <Flex className={styles.container} >
         <div className={styles.photo}>
             <div className={styles.content}>
                 <span className={styles.header}>невероятная история любви</span>

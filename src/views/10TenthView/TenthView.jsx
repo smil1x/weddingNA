@@ -6,7 +6,7 @@ import EditableSelect from "@/components/EditableSelect/EditableSelect.jsx";
 
 const nmPs = 'Имя и фамилия'
 const phPs = 'Телефон для связи'
-const alPs = 'Аллергены'
+const alPs = 'Пожелания по меню и аллергии'
 const pOnePs = 'Имя и фамилия спутника(цы)'
 
 const TenthView = () => {
@@ -28,14 +28,15 @@ const TenthView = () => {
 
         try {
 
-            // await form.validateFields()
+            await form.validateFields()
             const values = form.getFieldsValue()
             console.log(values)
             messageApi.success({content: 'Данные отправлены'})
             form.resetFields()
 
         } catch (e) {
-            console.log(e)
+            messageApi.error({content: 'Обязательные поля не заполнены'})
+            console.error(e)
         }
     }
 
@@ -77,8 +78,9 @@ const TenthView = () => {
         {contextHolder}
         <Flex className={styles.container} vertical align='center'>
             <h3>Анкета гостя</h3>
-            <p>Просим тебя подтвердить свое присутствие
+            <p style={{margin: '20px 0 0 0'}}>Просим тебя подтвердить свое присутствие
                 и заполнить анкету гостя до 1 апреля 2025</p>
+            <p style={{margin: '0 0 20px 0', fontSize: 12}}>(анкета заполняется индивидуально для каждого гостя)</p>
             <ConfigProvider
                 theme={{
                     token: {
@@ -243,5 +245,3 @@ const TenthView = () => {
 }
 
 export default TenthView
-
-

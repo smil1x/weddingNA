@@ -47,31 +47,30 @@
     font-style: normal;
 }
 
+$with: 410px;
+$phone-with: 100%;
 
 
 .view {
-    z-index: 2;
+    position: relative;
     align-items: center;
-    width: 410px;
+    width: $with;
     background-color: #F8F1E1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    //overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
+
 
     p {
         line-height: 22px;
-    }
-
-    @media (max-width: 430px) {
-        width: 100%
     }
 }
 
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 input, select, textarea {
@@ -109,4 +108,62 @@ input, select, textarea {
 .ant-select-open .ant-select-arrow {
     color: #60824C;
     transform: rotate(180deg); /* Переворачиваем иконку при открытии */
+}
+
+
+.ant-modal-content {
+    border-radius: 0 !important;
+}
+
+.ant-modal-wrap {
+    padding-right: 17px !important;
+    height: 100hv !important;
+}
+
+.ant-modal {
+    //margin: 0 !important;
+}
+
+.customModal {
+    width: $with !important;
+    padding: 0 !important;
+    position: relative;
+
+    h3 {
+        font-family: 'SnellRound', sans-serif;
+        color: #60824c;
+        font-weight: 500;
+        font-size: 26px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    .modal-line {
+        width: 76px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.ant-modal-content{
+    padding: 0 !important;
+}
+
+.iframe {
+    width: 100%;
+    height: 215px;
+}
+
+@media (max-width: 431px) {
+    .view {
+        width: $phone-with;
+    }
+    .ant-modal-wrap {
+        padding-right: 0 !important;
+    }
+
+    .customModal {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }

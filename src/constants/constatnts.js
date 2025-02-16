@@ -9,4 +9,4 @@ export const planTime = {
     end: '00:00'
 }
 
-export const weddingDate = '2025-05-15T16:40:00'
+export const weddingDate = '2025-05-15T15:00:00'

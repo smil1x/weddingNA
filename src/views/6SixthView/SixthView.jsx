@@ -60,7 +60,7 @@ const SixthView = () => {
                         },
                         components: {
                             Collapse: {
-                                headerPadding: 0,
+                                headerPadding: 5,
                                 contentPadding: 0,
                                 textAlign: 'start',
                             },

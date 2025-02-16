@@ -1,13 +1,19 @@
 @use "@/styles/variables" as *;
 
+.container {
+  width: 100%;
+  z-index: 20;
+}
+
 .photo {
+  z-index: 2000;
   background-image: url("/src/assets/photo/preview.png") ;
   width: 100%;
   height: 800px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
+  position: relative;
 
   .content {
     height: 100%;
