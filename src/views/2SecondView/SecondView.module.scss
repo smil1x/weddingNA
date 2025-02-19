@@ -16,11 +16,16 @@
     color: $color-green;
     font-weight: 500;
   }
+}
 
-  p{
-    font-family: $font-pln;
-    margin: 20px 30px 72px 30px;
-    font-size: 14px;
+.text {
+  width: 335px;
+  font-family: $font-pln;
+  margin: 20px 30px 72px 30px;
+  font-size: 14px;
+
+  @media (max-width: 391px) {
+    width: 300px;
   }
 }
 

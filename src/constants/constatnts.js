@@ -129,7 +129,7 @@ export const People = [
     {
         id: "4cea92c1",
         link: "https://www.youtube.com/embed/Lw1RHgnoviU?si=wfxdauVb7enyUxMY",
-        greeting: "Дорогие Саша и Влад",
+        greeting: "Дорогие Саша и Влад!",
         systemName: "Саша и Влад Друть"
     },
     {

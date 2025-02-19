@@ -137,13 +137,18 @@ input, select, textarea {
         font-size: 26px;
         margin-bottom: 20px;
         margin-top: 60px;
+        padding: 0 10px;
     }
 
     .modal-line {
         width: 76px;
         position: absolute;
         left: 0;
-        top: 0;
+        top: -10px;
+        @media (max-width: 390px) {
+           top: -15px;
+            left: -15px;
+        }
     }
 }
 .ant-modal-content{

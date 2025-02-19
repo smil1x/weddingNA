@@ -6,7 +6,7 @@ import classNames from "classnames";
 const NinthView = () => {
     return <div className={classNames('view', styles.container)}>
         <h3>Второй день свадьбы</h3>
-        <p>
+        <p style={{width: '335px'}}>
             Свадьба будет продолжаться 16 мая, мы будем рады видеть тебя на неформальном празднике
             в Новополоцке. Атмосфера будет легкой
             и непринужденной, дресс-код — свободный. Место и время мы уточним чуть позже,
