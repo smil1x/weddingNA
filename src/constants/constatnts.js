@@ -157,7 +157,7 @@ export const People = [
         systemName: "Полина и Ярик Орловы"
     },
     {
-        id: "0a9e79ef",
+        id: "054679ef",
         link: "https://www.youtube.com/embed/vNJs0hn9BSo?si=6Y3sSwN8ISaXK3uv",
         greeting: "Дорогой Егор!",
         systemName: "Егор Белявский"
