@@ -58,7 +58,7 @@ const SixthView = () => {
             <Flex vertical className={styles.container}>
                 <h3>Дресс-код</h3>
                 <p className={styles.desc}>Дорогой гость, нам будет очень приятно,<br/>
-                    если ты поддержишь стиль и цвет нашей свадьбы
+                    если ты поддержишь стиль и цвет нашей свадьбы<br/>
                     в своем наряде.</p>
                 <ConfigProvider
                     theme={{

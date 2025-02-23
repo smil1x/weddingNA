@@ -35,7 +35,7 @@ const CounterView = () => {
        <Flex className={styles.container}>
            <h3>До свадьбы осталось</h3>
            <BigSticker>
-               <Flex align='center' justify='center' style={{width: 240, padding: '5px 0'}} key={timeLeft.seconds}>
+               <Flex align='center' justify='center' style={{width: 240, padding: '15px 0 10px 0'}} key={timeLeft.seconds}>
                    <Flex className={styles.item}>
                        <div className={styles.number}>{timeLeft.days}</div>
                        <div className={styles.label}>дней</div>

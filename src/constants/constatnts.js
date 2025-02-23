@@ -57,7 +57,7 @@ export const People = [
     {
         id: "e851189a",
         link: "https://www.youtube.com/embed/5aCj4d4dVlc?si=Cw3_BTkVBcBKHDz2",
-        greeting: "Дорогие Бабушка, Дима, Инна и Даник!",
+        greeting: "Дорогие Бабушка Галя, Дима, Ина и Даник!",
         systemName: "Глушонки"
     },
     {

@@ -142,7 +142,10 @@ const TenthView = () => {
                             colorBgElevated: "#F8F1E1",
                             controlHeight: 40,
                             optionSelectedFontWeight: 500
-                        }
+                        },
+                        Form: {
+                            itemMarginBottom: 12
+                        },
                     }
                 }}
             >

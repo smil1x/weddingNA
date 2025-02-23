@@ -1,7 +1,7 @@
 @use "@/styles/variables" as *;
 
 .container {
-  padding: 0 20px 55px 20px;
+  padding: 0 5px 55px 5px;
   align-items: center;
   font-family: $font-pln;
   color: $color-grey;
@@ -11,7 +11,7 @@
     color: $color-green;
     font-weight: 500;
     font-size: 26px;
-    margin: 0 0 20px 0;
+    margin: 10px 0 20px 0;
   }
 
   .desc {
@@ -20,9 +20,9 @@
   }
 
   .collapse {
+    width: 335px;
     font-weight: 600;
     font-size: 18px;
-    width: 100%;
     align-self: start;
 
     p{
