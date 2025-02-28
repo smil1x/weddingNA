@@ -11,13 +11,14 @@ const FifthView = () => {
             <Flex align='center' justify='space-between' style={{width: '100%', marginBottom: 10}}>
                 <Flex className={styles.firstHalf}>
                     <PlanItem time={planTime.npDeparture}>
-                        <p className={styles.title}>Выезд из г. Новополоцк</p>
+                        <p className={styles.title}>Выезд на площадку</p>
                     </PlanItem>
                     <PlanItem time={planTime.minskDeparture}>
-                        <p className={styles.title}>Выезд из г. Минск</p>
+                        <p className={styles.title}>Расселение.<br/>
+                            Сбор гостей на площадке</p>
                     </PlanItem>
                     <PlanItem time={planTime.accommodation}>
-                        <p className={styles.title}>Расселение.<br/> Сбор гостей на площадке</p>
+                        <p className={styles.title}>Welcome, фуршет</p>
                     </PlanItem>
                 </Flex>
                 <Flex vertical gap={40} style={{marginRight: 50}}>

@@ -15,9 +15,22 @@ const SixthView = () => {
         {
             key: '1',
             label: 'Одежда',
-            children: <p>Предлагаем отдать предпочтение вечерним<br/> нарядам в пастельных или черных тонах,<br/>
-                вместо ярких цветов и белого.<br/>
-                Мужчинам предлагаем остановиться на костюмах,<br/> предпочтительно черного цвета.</p>,
+            children: <div>
+                <p>Предлагаем отдать предпочтение вечерним<br/> нарядам в пастельных или черных тонах,
+                    избегая<br/> слишком
+                    ярких цветов и белого.<br/>
+                    Для девушек: Цветовая палитра – молочный,<br/> оттенки бежевого, нежно-желтый,<br/>
+                    зелёный, черный.<br/>
+                    Для мужчин: Костюмы, предпочтительно<br/>
+                    черного цвета</p>
+                    <Flex style={{width:'100%', margin: '10px 0 0 0'}} align='center' justify='center' gap={15}>
+                        <div className={styles.color} style={{ border: '1px #FFFFFF solid', backgroundColor: '#F6EFDC' }}/>
+                        <div className={styles.color} style={{backgroundColor: '#F1DFB1'}}/>
+                        <div className={styles.color} style={{backgroundColor: '#C79C8B'}}/>
+                        <div className={styles.color} style={{backgroundColor: '#2E4626'}}/>
+                        <div className={styles.color} style={{backgroundColor: '#000000'}}/>
+                    </Flex>
+            </div>,
         },
         {
             key: '2',
