@@ -2,8 +2,8 @@ export const locationLink = 'https://yandex.by/navi/?ll=27.432636%2C54.479137&mo
 
 export const planTime = {
     npDeparture: '12:00',
-    minskDeparture: '14:00',
-    accommodation: '15:15',
+    minskDeparture: '15:15',
+    accommodation: '16:00',
     ceremony: '16:40',
     banquet: '17:30',
     end: '00:00'
